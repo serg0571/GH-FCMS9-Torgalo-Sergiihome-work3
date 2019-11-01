@@ -1,0 +1,17 @@
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+p{
+  margin-left: 40px;
+}
+ul {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+fieldset{
+  margin: 15px;
+}
