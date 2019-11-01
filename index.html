@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/form.css" type="text/css">
+</head>
+
+<body>
+<h1>Урок "формы": теги и их атрибуты </h1>
+<h2>Расскажите немного о себе</h2>
+
+<form action="#" enctype="multipart/form-data" method="post">
+    <fieldset>
+        <ul>
+            <li> <strong>коротко о себе</strong></li>
+            <li><label> имя <input type="text"> </label></li>
+            <li><label> фамилия <input type="text"></label></li>
+            <li> <strong>пол</strong></li>
+            <li><input type="radio" name="answer" value="a1"> мужской</li>
+            <li><input type="radio" name="answer" value="a2"> женский</li>
+            <li><label><strong>возраст</strong>  <input type="text"> лет</label></li>
+        </ul>
+    </fieldset>
+
+</form>
+<form action="#" enctype="multipart/form-data" method="post">
+    <fieldset>
+        <ul>
+            <li> <strong>подробнее о себе</strong></li>
+            <li><label><input type="radio" name="answer" value="b1"> молодой человек</label></li>
+            <li><label><input type="radio" name="answer" value="b2"> девушка</label></li>
+            <li>
+                <input type="number" name="birth"> дата рождения
+            </li>
+            <li>
+                <input type="text" name="marrig"> семейное положение
+            </li>
+            <li><input type="text" name="socisl"> социальный статус</li>
+            <li><input type="text" name="live"> место жительства</li>
+        </ul>
+        <ul>
+            <li> <strong>Что вы обычно делаете на выходных</strong></li>
+            <li><label> <input type="checkbox" name="holiday" value="s1"> идете в церковь</label></li>
+            <li><label> <input type="checkbox" name="holiday" value="s2"> сплю</label></li>
+            <li><label> <input type="checkbox" name="holiday" value="s3"> гуляю с друзьями</label></li>
+            <li><label> <input type="checkbox" name="holiday" value="s4"> хожу на рыбалку </label></li>
+        </ul>
+        <ul>
+            <li><strong>сколько фильмов вы посмотрели за свою жизнь</strong></li>
+            <li><input type="radio" name="nomber" value="h1"> 10-20</li>
+            <li><input type="radio" name="nomber" value="h2"> 20-30</li>
+            <li><input type="radio" name="nomber" checked value="h3"> >30</li>
+        </ul>
+        <ul>
+            <li><strong>Ваши комментарии</strong></li>
+            <li><label for="area">
+                <textarea name="n11" id="area" cols="30" rows="10"> </textarea></label></li>
+            <li><strong> К какой категории вы себя относите</strong></li>
+            <li>
+                <select name="categor" id="catego">
+                    <option value="p1" selected> христианин</option>
+                    <option value="p2"> будист</option>
+                    <option value="p3">мусульманин</option>
+                    <option value="p4"> атеист</option>
+                </select>
+            </li>
+        </ul>
+
+    </fieldset>
+</form>
+<form action="#" enctype="multipart/form-data" method="post">
+    <fieldset>
+        <p><input type="search" placeholder="Ваш адрес"></p>
+        <ul>
+            <li>
+                <label> <input type="email" name="mail"><strong> ваш email </strong> </label>
+            </li>
+
+        </ul>
+
+    </fieldset>
+    <ul>
+        <li><input type="submit" name="submit"></li>
+    </ul>
+</form>
+
+</body>
+</html>
